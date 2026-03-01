@@ -1,0 +1,78 @@
+<template>
+  <div class="demo-container">
+    <el-row :gutter="20">
+      <el-col :xs="24" :sm="12" :md="24">
+        <div style="background-color: #ffffff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);">
+          <h4 style="margin-bottom: 15px; color: #666; font-size: 16px;">自定义样式的雷达图</h4>
+          <SunlightRadarChart
+            :indicator="radarIndicator"
+            :data="customRadarData"
+            height="300px"
+            :show-legend="true"
+            :colors="['#9C27B0', '#FF5722', '#00BCD4']"
+          />
+        </div>
+      </el-col>
+    </el-row>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import { SunlightRadarChart } from 'sunlight-ui';
+
+const radarIndicator = ref([
+  { name: '销售', max: 100 },
+  { name: '市场', max: 100 },
+  { name: '研发', max: 100 },
+  { name: '客服', max: 100 },
+  { name: '财务', max: 100 },
+  { name: '人事', max: 100 }
+]);
+
+
+const customRadarData = ref([
+  {
+    name: '公司A',
+    value: [80, 70, 90, 60, 85, 75],
+    symbolSize: 6,
+    lineStyle: {
+      width: 3
+    },
+    areaStyle: {
+      opacity: 0.2
+    }
+  },
+  {
+    name: '公司B',
+    value: [70, 80, 60, 90, 75, 85],
+    symbolSize: 6,
+    lineStyle: {
+      width: 3
+    },
+    areaStyle: {
+      opacity: 0.2
+    }
+  },
+  {
+    name: '公司C',
+    value: [90, 60, 80, 70, 65, 90],
+    symbolSize: 6,
+    lineStyle: {
+      width: 3
+    },
+    areaStyle: {
+      opacity: 0.2
+    }
+  }
+]);
+</script>
+
+<style scoped>
+.demo-container {
+  padding: 20px;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+}
+
+</style>

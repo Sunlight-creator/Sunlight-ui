@@ -1,0 +1,16 @@
+.el-cell-copy-icon {
+  margin-inline-start: 4px;
+  vertical-align: sub;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition: color cssVarEl(transition-duration-fast);
+
+  &:hover {
+    color: cssVarEl(color-primary);
+  }
+}
+
+.tk-cell-point-tag {
+  vertical-align: 1px;
+}

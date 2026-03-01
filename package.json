@@ -1,0 +1,27 @@
+{
+  "name": "my-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:admin": "pnpm --filter sunlight-admin dev",
+    "dev:docs": "pnpm --filter sunlight-docs docs:dev",
+    "dev:all": "concurrently --prefix-colors \"green,blue,yellow\" --names \"ADMIN,DOCS,EXAMPLES\" \"pnpm run dev:admin\" \"pnpm run dev:docs\"",
+    "build:admin": "pnpm --filter sunlight-admin build",
+    "build:docs": "pnpm --filter sunlight-docs docs:build",
+    "build:packages": "pnpm --filter \"packages/*\" build",
+    "build:all": "pnpm run build:admin && pnpm run build:docs && pnpm run build:packages",
+    "lint": "pnpm -r lint:eslint",
+    "lint:admin": "pnpm --filter sunlight-admin lint:eslint",
+    "clean:node_modules": "rm -rf sunlight-admin/node_modules sunlight-docs/node_modules examples/node_modules packages/*/node_modules",
+    "clean:dist": "rm -rf sunlight-admin/dist sunlight-docs/docs/.vitepress/dist packages/*/dist",
+    "clean": "pnpm run clean:node_modules && pnpm run clean:dist",
+    "reinstall": "pnpm run clean:node_modules && pnpm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
