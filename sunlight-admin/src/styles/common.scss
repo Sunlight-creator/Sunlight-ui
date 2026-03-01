@@ -1,0 +1,96 @@
+/* 共同的 */
+
+/* flex */
+.flx-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flx-justify-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flx-align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* clearfix */
+.clearfix::after {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  content: '';
+}
+
+/* 文字单行省略号 */
+.sle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 文字多行省略号 */
+.mle {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 文字多了自动換行 */
+.break-word {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+/* nprogress */
+#nprogress .bar {
+  background: var(--el-color-primary) !important;
+}
+#nprogress .spinner-icon {
+  border-top-color: var(--el-color-primary) !important;
+  border-left-color: var(--el-color-primary) !important;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--el-color-primary), 0 0 5px var(--el-color-primary) !important;
+}
+
+
+
+.box-card {
+  max-width: 98%;
+  margin: 0 auto;
+  padding: 32px 40px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.box-card:hover {
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.18);
+}
+
+.card-header {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 16px;
+  user-select: none;
+}
+
+.input-wrapper {
+  width: 100%;
+}
+
+
+
+.custom-input .el-input__clear:hover {
+  opacity: 1;
+}
+
