@@ -9,20 +9,9 @@ export const sunlightConfig = defineTeekConfig({
   },
   author: { name: "Sunlight-creator", link: "https://github.com/Sunlight-creator/Sunlight-ui.git" },
   docAnalysis: {
-    createTime: "2021-10-19",
+    createTime: "2024-10-19",
   },
-  footerInfo: {
-
-    // 备案信息
-    securityRecord: {
-      icon: "/qrcode/备案图标.png",
-      link: "https://beian.mps.gov.cn/#/query/webSearch?code=23128202000167",
-    },
-    theme: {
-      name: "黑公网安备23128202000167号",
-      link: "https://beian.mps.gov.cn/#/query/webSearch?code=23128202000167",
-    },
-  },
+  footerInfo: false,
   codeBlock: {
     copiedDone: TkMessage => TkMessage.success("复制成功！"),
   },

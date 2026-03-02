@@ -1,11 +1,6 @@
-<!-- 
-  Pagination 分页组件
-  基于 Element Plus 的 el-pagination 封装，提供更便捷的分页功能
--->
+
 <template>
-  <!-- 分页容器：根据 hidden 属性控制显示/隐藏 -->
   <div :class="{ 'hidden': hidden }" class="pagination-container">
-    <!-- Element Plus 分页组件 -->
     <el-pagination
       :background="background"
       v-model:current-page="currentPage"

@@ -61,21 +61,5 @@ const options = [
         }"
       />
     </div>
-
-    <div style="margin-bottom: 20px">
-      <div style="margin-bottom: 8px">圆形 (50px)</div>
-      <SunlightSelect
-        v-model="selectValue"
-        :item="{
-          placeholder: '请选择...',
-          clearable: true,
-          options: options,
-          wrapperStyle: {
-            borderRadius: '50px',
-            borderColor: '#f56c6c',
-          },
-        }"
-      />
-    </div>
   </div>
 </template>

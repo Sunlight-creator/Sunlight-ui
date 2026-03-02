@@ -107,7 +107,6 @@ const isGroup = computed(() => props.item?.isGroup !== false);
 </template>
 
 <style scoped>
-/* 外层容器样式 */
 .sunlight-checkbox-wrapper {
   width: 100%;
   box-sizing: border-box;
@@ -115,8 +114,6 @@ const isGroup = computed(() => props.item?.isGroup !== false);
 .sunlight-checkbox-wrapper :deep(.el-checkbox__inner) {
   border-color: var(--checkbox-wrapper-focus-border-color)    ;
 }
-
-/* Checkbox 自定义样式 */
 .sunlight-checkbox-wrapper :deep(.el-checkbox__input.is-checked .el-checkbox__inner) {
   background-color: var(--checkbox-wrapper-focus-border-color)    ;
   border-color: var(--checkbox-wrapper-focus-border-color)    ;

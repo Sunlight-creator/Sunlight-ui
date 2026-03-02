@@ -5,50 +5,50 @@ import { SunlightCascader } from "sunlight-ui";
 const cascaderValue = ref("");
 const options = [
   {
-    value: 'zhinan',
-    label: '指南',
+    value: "zhinan",
+    label: "指南",
     children: [
       {
-        value: 'shejiyuanze',
-        label: '设计原则',
+        value: "shejiyuanze",
+        label: "设计原则",
         children: [
-          { value: 'yizhi', label: '一致' },
-          { value: 'fankui', label: '反馈' },
-          { value: 'xiaolu', label: '效率' }
-        ]
+          { value: "yizhi", label: "一致" },
+          { value: "fankui", label: "反馈" },
+          { value: "xiaolu", label: "效率" },
+        ],
       },
       {
-        value: 'daohang',
-        label: '导航',
+        value: "daohang",
+        label: "导航",
         children: [
-          { value: 'cexiangdaohang', label: '侧向导航' },
-          { value: 'dingbudaohang', label: '顶部导航' }
-        ]
-      }
-    ]
+          { value: "cexiangdaohang", label: "侧向导航" },
+          { value: "dingbudaohang", label: "顶部导航" },
+        ],
+      },
+    ],
   },
   {
-    value: 'zujian',
-    label: '组件',
+    value: "zujian",
+    label: "组件",
     children: [
       {
-        value: 'basic',
-        label: 'Basic',
+        value: "basic",
+        label: "Basic",
         children: [
-          { value: 'layout', label: 'Layout 布局' },
-          { value: 'color', label: 'Color 色彩' }
-        ]
+          { value: "layout", label: "Layout 布局" },
+          { value: "color", label: "Color 色彩" },
+        ],
       },
       {
-        value: 'form',
-        label: 'Form',
+        value: "form",
+        label: "Form",
         children: [
-          { value: 'radio', label: 'Radio 单选框' },
-          { value: 'checkbox', label: 'Checkbox 多选框' }
-        ]
-      }
-    ]
-  }
+          { value: "radio", label: "Radio 单选框" },
+          { value: "checkbox", label: "Checkbox 多选框" },
+        ],
+      },
+    ],
+  },
 ];
 </script>
 
@@ -64,8 +64,8 @@ const options = [
           options: options,
           showAllLevels: true,
           wrapperStyle: {
-            borderRadius: '4px'
-          }
+            borderRadius: '4px',
+          },
         }"
       />
     </div>
@@ -82,8 +82,8 @@ const options = [
           wrapperStyle: {
             borderRadius: '8px',
             focusBorderColor: '#67c23a',
-            focusBoxShadow: '0 0 0 3px rgba(103, 194, 58, 0.25)'
-          }
+            focusBoxShadow: '0 0 0 3px rgba(103, 194, 58, 0.25)',
+          },
         }"
         theme="primary"
       />
@@ -101,28 +101,10 @@ const options = [
           wrapperStyle: {
             borderRadius: '16px',
             focusBorderColor: '#409eff',
-            focusBoxShadow: '0 0 0 3px rgba(64, 158, 255, 0.25)'
-          }
+            focusBoxShadow: '0 0 0 3px rgba(64, 158, 255, 0.25)',
+          },
         }"
         theme="success"
-      />
-    </div>
-
-    <div style="margin-bottom: 20px">
-      <div style="margin-bottom: 8px">圆形 (50px)</div>
-      <SunlightCascader
-        v-model="cascaderValue"
-        :item="{
-          placeholder: '请选择内容...',
-          clearable: true,
-          options: options,
-          showAllLevels: true,
-          wrapperStyle: {
-            borderRadius: '50px',
-            borderColor: '#f56c6c'
-          }
-        }"
-        theme="warning"
       />
     </div>
   </div>

@@ -117,11 +117,8 @@ const emit = defineEmits<DrawerEmits>()
 // 抽屉显示状态（双向绑定）
 const visible = defineModel<boolean>('visible', { default: false })
 
-/**
- * 格式化单位：为数值添加单位
- * @param value - 数值或带单位的字符串
- * @returns 带单位的字符串
- */
+// 格式化单位：为数值添加单位
+
 const formatUnit = (value: number | string): string => {
   if (typeof value === 'number') {
     return `${value}px`

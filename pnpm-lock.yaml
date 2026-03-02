@@ -12,31 +12,6 @@ importers:
         specifier: ^9.2.1
         version: 9.2.1
 
-  examples:
-    dependencies:
-      '@element-plus/icons-vue':
-        specifier: ^2.3.2
-        version: 2.3.2(vue@3.5.25(typescript@5.9.3))
-      element-plus:
-        specifier: ^2.12.0
-        version: 2.12.0(vue@3.5.25(typescript@5.9.3))
-      sunlight-ui:
-        specifier: workspace:*
-        version: link:../packages/Sunlight-ui
-      vue:
-        specifier: ^3.5.25
-        version: 3.5.25(typescript@5.9.3)
-    devDependencies:
-      '@types/node':
-        specifier: ^20.0.0
-        version: 20.19.24
-      '@vitejs/plugin-vue':
-        specifier: ^5.2.4
-        version: 5.2.4(vite@5.4.21(@types/node@20.19.24)(sass@1.97.3)(terser@5.43.1))(vue@3.5.25(typescript@5.9.3))
-      vite:
-        specifier: ^5.4.21
-        version: 5.4.21(@types/node@20.19.24)(sass@1.97.3)(terser@5.43.1)
-
   packages/Sunlight-ui:
     dependencies:
       '@element-plus/icons-vue':

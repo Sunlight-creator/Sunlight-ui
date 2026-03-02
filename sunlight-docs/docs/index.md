@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Sunlight UI
-  text: 个人爱好者的Vue3组件库
+  text: Vue3组件库
   tagline: ✨基于 Vue3、TypeScript、Element-Plus 封装的现代化组件库
   actions:
     - theme: brand

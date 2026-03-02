@@ -860,225 +860,225 @@ export const asyncRoutes: MenuType.MenuOptions[] = [
   },
 
   // 菜单嵌套
-  {
-    path: '/menu-nest',
-    name: 'menuNest',
-    component: Layout,
-    meta: {
-      title: '菜单嵌套',
-      icon: 'menu-nest',
-      roles: ['admin', 'administrator', 'visitor'],
-      isKeepAlive: true
-    },
-    children: [
-      {
-        path: 'menu-nest1',
-        name: 'Nest1',
-        component: () => import('@/views/menuNest/Nest1/index.vue'),
-        meta: {
-          title: '菜单1',
-          icon: 'menu-nest',
-          roles: ['admin', 'administrator', 'visitor'],
-          isKeepAlive: true
-        }
-      },
-      {
-        path: 'menu-nest2',
-        name: 'Nest2',
-        meta: {
-          title: '菜单2',
-          icon: 'menu-nest',
-          roles: ['admin', 'administrator', 'visitor'],
-          isKeepAlive: true
-        },
-        children: [
-          {
-            path: 'menu-nest21',
-            name: 'Nest21',
-            component: () => import('@/views/menuNest/Nest2/Nest21/index.vue'),
-            meta: {
-              title: '菜单2-1',
-              icon: 'menu-nest',
-              roles: ['admin', 'administrator', 'visitor'],
-              isKeepAlive: true
-            }
-          },
-          {
-            path: 'menu-nest22',
-            name: 'Nest22',
-            meta: {
-              title: '菜单2-2',
-              icon: 'menu-nest',
-              roles: ['admin', 'administrator'],
-              isKeepAlive: true
-            },
-            children: [
-              {
-                path: 'menu-nest221',
-                name: 'Nest221',
-                component: () => import('@/views/menuNest/Nest2/Nest22/Nest221/index.vue'),
-                meta: {
-                  title: '菜单2-2-1',
-                  icon: 'menu-nest',
-                  roles: ['admin', 'administrator'],
-                  isKeepAlive: true
-                }
-              },
-              {
-                path: 'menu-nest222',
-                name: 'Nest222',
-                component: () => import('@/views/menuNest/Nest2/Nest22/Nest222/index.vue'),
-                meta: {
-                  title: '菜单2-2-2',
-                  icon: 'menu-nest',
-                  roles: ['admin', 'administrator'],
-                  isKeepAlive: true
-                }
-              }
-            ]
-          },
-          {
-            path: 'menu-nest23',
-            name: 'Nest23',
-            component: () => import('@/views/menuNest/Nest2/Nest23/index.vue'),
-            meta: {
-              title: '菜单2-3',
-              icon: 'menu-nest',
-              roles: ['admin', 'administrator'],
-              isKeepAlive: true
-            }
-          }
-        ]
-      },
-      {
-        path: 'menu-nest3',
-        name: 'Nest3',
-        component: () => import('@/views/menuNest/Nest3/index.vue'),
-        meta: {
-          title: '菜单3',
-          icon: 'menu-nest',
-          roles: ['admin', 'administrator', 'visitor'],
-          isKeepAlive: true
-        }
-      }
-    ]
-  },
+  // {
+  //   path: '/menu-nest',
+  //   name: 'menuNest',
+  //   component: Layout,
+  //   meta: {
+  //     title: '菜单嵌套',
+  //     icon: 'menu-nest',
+  //     roles: ['admin', 'administrator', 'visitor'],
+  //     isKeepAlive: true
+  //   },
+  //   children: [
+  //     {
+  //       path: 'menu-nest1',
+  //       name: 'Nest1',
+  //       component: () => import('@/views/menuNest/Nest1/index.vue'),
+  //       meta: {
+  //         title: '菜单1',
+  //         icon: 'menu-nest',
+  //         roles: ['admin', 'administrator', 'visitor'],
+  //         isKeepAlive: true
+  //       }
+  //     },
+  //     {
+  //       path: 'menu-nest2',
+  //       name: 'Nest2',
+  //       meta: {
+  //         title: '菜单2',
+  //         icon: 'menu-nest',
+  //         roles: ['admin', 'administrator', 'visitor'],
+  //         isKeepAlive: true
+  //       },
+  //       children: [
+  //         {
+  //           path: 'menu-nest21',
+  //           name: 'Nest21',
+  //           component: () => import('@/views/menuNest/Nest2/Nest21/index.vue'),
+  //           meta: {
+  //             title: '菜单2-1',
+  //             icon: 'menu-nest',
+  //             roles: ['admin', 'administrator', 'visitor'],
+  //             isKeepAlive: true
+  //           }
+  //         },
+  //         {
+  //           path: 'menu-nest22',
+  //           name: 'Nest22',
+  //           meta: {
+  //             title: '菜单2-2',
+  //             icon: 'menu-nest',
+  //             roles: ['admin', 'administrator'],
+  //             isKeepAlive: true
+  //           },
+  //           children: [
+  //             {
+  //               path: 'menu-nest221',
+  //               name: 'Nest221',
+  //               component: () => import('@/views/menuNest/Nest2/Nest22/Nest221/index.vue'),
+  //               meta: {
+  //                 title: '菜单2-2-1',
+  //                 icon: 'menu-nest',
+  //                 roles: ['admin', 'administrator'],
+  //                 isKeepAlive: true
+  //               }
+  //             },
+  //             {
+  //               path: 'menu-nest222',
+  //               name: 'Nest222',
+  //               component: () => import('@/views/menuNest/Nest2/Nest22/Nest222/index.vue'),
+  //               meta: {
+  //                 title: '菜单2-2-2',
+  //                 icon: 'menu-nest',
+  //                 roles: ['admin', 'administrator'],
+  //                 isKeepAlive: true
+  //               }
+  //             }
+  //           ]
+  //         },
+  //         {
+  //           path: 'menu-nest23',
+  //           name: 'Nest23',
+  //           component: () => import('@/views/menuNest/Nest2/Nest23/index.vue'),
+  //           meta: {
+  //             title: '菜单2-3',
+  //             icon: 'menu-nest',
+  //             roles: ['admin', 'administrator'],
+  //             isKeepAlive: true
+  //           }
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       path: 'menu-nest3',
+  //       name: 'Nest3',
+  //       component: () => import('@/views/menuNest/Nest3/index.vue'),
+  //       meta: {
+  //         title: '菜单3',
+  //         icon: 'menu-nest',
+  //         roles: ['admin', 'administrator', 'visitor'],
+  //         isKeepAlive: true
+  //       }
+  //     }
+  //   ]
+  // },
   // 表单
-  {
-    path: '/form',
-    name: 'form',
-    component: Layout,
-    meta: {
-      title: '表单 Form',
-      icon: 'menu-form',
-      roles: ['admin', 'administrator'],
-      isKeepAlive: true
-    },
-    children: [
-      {
-        path: 'basic-form',
-        name: 'BasicForm',
-        component: () => import('@/views/form/basicForm/index.vue'),
-        meta: {
-          title: '基础表单',
-          icon: 'menu-form',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: true
-        }
-      },
-      {
-        path: 'validate-form',
-        name: 'ValidateForm',
-        component: () => import('@/views/form/validateForm/index.vue'),
-        meta: {
-          title: '校验表单',
-          icon: 'menu-form',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: true
-        }
-      }
-    ]
-  },
+  // {
+  //   path: '/form',
+  //   name: 'form',
+  //   component: Layout,
+  //   meta: {
+  //     title: '表单 Form',
+  //     icon: 'menu-form',
+  //     roles: ['admin', 'administrator'],
+  //     isKeepAlive: true
+  //   },
+  //   children: [
+  //     {
+  //       path: 'basic-form',
+  //       name: 'BasicForm',
+  //       component: () => import('@/views/form/basicForm/index.vue'),
+  //       meta: {
+  //         title: '基础表单',
+  //         icon: 'menu-form',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: true
+  //       }
+  //     },
+  //     {
+  //       path: 'validate-form',
+  //       name: 'ValidateForm',
+  //       component: () => import('@/views/form/validateForm/index.vue'),
+  //       meta: {
+  //         title: '校验表单',
+  //         icon: 'menu-form',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: true
+  //       }
+  //     }
+  //   ]
+  // },
   // echarts图表
-  {
-    path: '/echarts',
-    name: 'echarts',
-    component: Layout,
-    meta: {
-      title: 'ECharts',
-      icon: 'menu-echarts',
-      roles: ['admin', 'administrator'],
-      isKeepAlive: true
-    },
-    children: [
-      {
-        path: 'column-chart',
-        component: () => import('@/views/echarts/columnChart/index.vue'),
-        name: 'ColumnChart',
-        meta: {
-          title: '柱状图',
-          icon: 'menu-echarts',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: true
-        }
-      },
-      {
-        path: 'line-chart',
-        component: () => import('@/views/echarts/lineChart/index.vue'),
-        name: 'LineChart',
-        meta: {
-          title: '折线图',
-          icon: 'menu-echarts',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: true
-        }
-      },
-      {
-        path: 'nested-chart',
-        component: () => import('@/views/echarts/NestedChart/index.vue'),
-        name: 'NestedChart',
-        meta: {
-          title: '嵌套环形图',
-          icon: 'menu-echarts',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: true
-        }
-      },
-      {
-        path: 'pie-chart',
-        component: () => import('@/views/echarts/pieChart/index.vue'),
-        name: 'PieChart',
-        meta: {
-          title: '饼图',
-          icon: 'menu-echarts',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: true
-        }
-      },
-      {
-        path: 'radar-chart',
-        component: () => import('@/views/echarts/radarChart/index.vue'),
-        name: 'RadarChart',
-        meta: {
-          title: '雷达图',
-          icon: 'menu-echarts',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: true
-        }
-      },
-      {
-        path: 'water-chart',
-        component: () => import('@/views/echarts/waterChart/index.vue'),
-        name: 'WaterChart',
-        meta: {
-          title: '水型图',
-          icon: 'menu-echarts',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: true
-        }
-      }
-    ]
-  },
+  // {
+  //   path: '/echarts',
+  //   name: 'echarts',
+  //   component: Layout,
+  //   meta: {
+  //     title: 'ECharts',
+  //     icon: 'menu-echarts',
+  //     roles: ['admin', 'administrator'],
+  //     isKeepAlive: true
+  //   },
+  //   children: [
+  //     {
+  //       path: 'column-chart',
+  //       component: () => import('@/views/echarts/columnChart/index.vue'),
+  //       name: 'ColumnChart',
+  //       meta: {
+  //         title: '柱状图',
+  //         icon: 'menu-echarts',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: true
+  //       }
+  //     },
+  //     {
+  //       path: 'line-chart',
+  //       component: () => import('@/views/echarts/lineChart/index.vue'),
+  //       name: 'LineChart',
+  //       meta: {
+  //         title: '折线图',
+  //         icon: 'menu-echarts',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: true
+  //       }
+  //     },
+  //     {
+  //       path: 'nested-chart',
+  //       component: () => import('@/views/echarts/NestedChart/index.vue'),
+  //       name: 'NestedChart',
+  //       meta: {
+  //         title: '嵌套环形图',
+  //         icon: 'menu-echarts',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: true
+  //       }
+  //     },
+  //     {
+  //       path: 'pie-chart',
+  //       component: () => import('@/views/echarts/pieChart/index.vue'),
+  //       name: 'PieChart',
+  //       meta: {
+  //         title: '饼图',
+  //         icon: 'menu-echarts',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: true
+  //       }
+  //     },
+  //     {
+  //       path: 'radar-chart',
+  //       component: () => import('@/views/echarts/radarChart/index.vue'),
+  //       name: 'RadarChart',
+  //       meta: {
+  //         title: '雷达图',
+  //         icon: 'menu-echarts',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: true
+  //       }
+  //     },
+  //     {
+  //       path: 'water-chart',
+  //       component: () => import('@/views/echarts/waterChart/index.vue'),
+  //       name: 'WaterChart',
+  //       meta: {
+  //         title: '水型图',
+  //         icon: 'menu-echarts',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: true
+  //       }
+  //     }
+  //   ]
+  // },
   // 指令
   {
     path: '/directives',
@@ -1173,72 +1173,72 @@ export const asyncRoutes: MenuType.MenuOptions[] = [
       }
     ]
   },
-  // 有 isLinkUrl 属于外部链接
-  {
-    path: '/link',
-    name: 'Link',
-    meta: {
-      title: '外部链接',
-      icon: 'menu-link',
-      roles: ['admin', 'administrator'],
-      isKeepAlive: true
-    },
-    children: [
-      {
-        path: 'vue',
-        name: 'Vue',
-        meta: {
-          icon: 'menu-link',
-          title: 'Vue 官网',
-          isLinkUrl: 'https://cn.vuejs.org/guide/introduction.html',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: false
-        }
-      },
-      {
-        path: 'vite',
-        name: 'Vite',
-        meta: {
-          icon: 'menu-link',
-          title: 'Vite 官网',
-          isLinkUrl: 'https://cn.vitejs.dev/guide/',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: false
-        }
-      },
-      {
-        path: 'juejin',
-        name: 'Juejin',
-        meta: {
-          icon: 'menu-link',
-          title: '掘金',
-          isLinkUrl: 'https://juejin.cn/',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: false
-        }
-      },
-      {
-        path: 'vue-i18n',
-        name: 'VueI18n',
-        meta: {
-          icon: 'menu-link',
-          title: 'Vue-i18n 文档',
-          isLinkUrl: 'https://kazupon.github.io/vue-i18n/zh/installation.html',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: false
-        }
-      },
-      {
-        path: 'element-plus',
-        name: 'ElementPlus',
-        meta: {
-          icon: 'menu-link',
-          title: 'ElementPlus 官网',
-          isLinkUrl: 'https://element-plus.gitee.io/zh-CN/',
-          roles: ['admin', 'administrator'],
-          isKeepAlive: false
-        }
-      }
-    ]
-  }
+
+  // {
+  //   path: '/link',
+  //   name: 'Link',
+  //   meta: {
+  //     title: '外部链接',
+  //     icon: 'menu-link',
+  //     roles: ['admin', 'administrator'],
+  //     isKeepAlive: true
+  //   },
+  //   children: [
+  //     {
+  //       path: 'vue',
+  //       name: 'Vue',
+  //       meta: {
+  //         icon: 'menu-link',
+  //         title: 'Vue 官网',
+  //         isLinkUrl: 'https://cn.vuejs.org/guide/introduction.html',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: false
+  //       }
+  //     },
+  //     {
+  //       path: 'vite',
+  //       name: 'Vite',
+  //       meta: {
+  //         icon: 'menu-link',
+  //         title: 'Vite 官网',
+  //         isLinkUrl: 'https://cn.vitejs.dev/guide/',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: false
+  //       }
+  //     },
+  //     {
+  //       path: 'juejin',
+  //       name: 'Juejin',
+  //       meta: {
+  //         icon: 'menu-link',
+  //         title: '掘金',
+  //         isLinkUrl: 'https://juejin.cn/',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: false
+  //       }
+  //     },
+  //     {
+  //       path: 'vue-i18n',
+  //       name: 'VueI18n',
+  //       meta: {
+  //         icon: 'menu-link',
+  //         title: 'Vue-i18n 文档',
+  //         isLinkUrl: 'https://kazupon.github.io/vue-i18n/zh/installation.html',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: false
+  //       }
+  //     },
+  //     {
+  //       path: 'element-plus',
+  //       name: 'ElementPlus',
+  //       meta: {
+  //         icon: 'menu-link',
+  //         title: 'ElementPlus 官网',
+  //         isLinkUrl: 'https://element-plus.gitee.io/zh-CN/',
+  //         roles: ['admin', 'administrator'],
+  //         isKeepAlive: false
+  //       }
+  //     }
+  //   ]
+  // }
 ]

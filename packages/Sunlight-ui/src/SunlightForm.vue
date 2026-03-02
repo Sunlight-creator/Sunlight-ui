@@ -125,7 +125,7 @@ const operationSlotStyle = computed(() => {
     display: 'flex',
     justifyContent: align === 'left' ? 'flex-start' : align === 'center' ? 'center' : 'flex-end',
     marginTop: '20px',
-    width: '100%' // 确保表单项占据整个宽度，使对齐生效
+    width: '100%' 
   };
 });
 

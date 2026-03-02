@@ -60,7 +60,6 @@ onMounted(() => {
         }"
       />
     </div>
-    <!-- animate(0, props.count, 1000, (value) => { props.count = value }) -->
 
     <div class="stats-card__content">
       <p v-if="props.title" class="stats-card__title" :style="{ color: props.textColor }">

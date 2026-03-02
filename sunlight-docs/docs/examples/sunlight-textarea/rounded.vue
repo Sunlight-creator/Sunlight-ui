@@ -57,22 +57,5 @@ const inputValue = ref("");
         theme="success"
       />
     </div>
-
-    <div style="margin-bottom: 20px">
-      <div style="margin-bottom: 8px">圆形 (50px)</div>
-      <SunlightTextarea
-        v-model="inputValue"
-        :item="{
-          placeholder: '搜索...',
-          clearable: true,
-          rows: 4,
-          wrapperStyle: {
-            borderRadius: '50px',
-            borderColor: '#f56c6c',
-          },
-        }"
-        theme="warning"
-      />
-    </div>
   </div>
 </template>

@@ -787,7 +787,7 @@ defineExpose({
   sort: (prop: string, order: string) => tableRef.value?.sort(prop, order),
 });
 
-console.log(props, "接收");
+// console.log(props, "接收");
 </script>
 
 <style scoped>

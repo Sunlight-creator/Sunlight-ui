@@ -79,7 +79,6 @@ const mergedAttrs = computed(() => {
 </template>
 
 <style scoped>
-/* 外层容器样式 - 确保宽度固定 */
 .sunlight-date-picker-wrapper {
   width: 100%;
   box-sizing: border-box;
@@ -112,16 +111,15 @@ const mergedAttrs = computed(() => {
   box-shadow: var(--date-picker-wrapper-focus-box-shadow, 0 0 0 3px rgba(64, 158, 255, 0.15))    ;
 }
 
-/* 禁用状态样式 */
+
 .sunlight-date-picker-wrapper :deep(.is-disabled) {
-  /* 禁用状态使用默认的禁用颜色 */
   border-color: var(--date-picker-wrapper-disabled-border-color)    ;
   background-color: var(--date-picker-wrapper-disabled-bg-color)    ;
   color: var(--date-picker-wrapper-disabled-color)    ;
 
 }
 
-/* 禁用状态下不响应 hover 和 focus 事件 */
+
 .sunlight-date-picker-wrapper :deep(.el-input__wrapper.is-disabled:hover) {
   border-color: var(--date-picker-wrapper-disabled-border-color)    ;
   background-color: var(--date-picker-wrapper-disabled-bg-color)    ;
@@ -135,7 +133,7 @@ const mergedAttrs = computed(() => {
   box-shadow: none    ;
 }
 
-/* 禁用状态下的输入框内容和图标颜色 */
+
 .sunlight-date-picker-wrapper :deep(.el-input__wrapper.is-disabled .el-input__inner) {
   color: var(--date-picker-wrapper-disabled-color)    ;
   background-color: transparent    ;
